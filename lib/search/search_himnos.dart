@@ -3,7 +3,7 @@
 
 import 'package:flutter/material.dart';
 //import 'package:toeflapp/pages/voz.dart';
-import 'package:search11/data/model_data.dart';
+import 'package:search11/data/model_data_himnos.dart';
 import 'package:search11/model/model.dart';
 
 class DirectionsDataSearch extends SearchDelegate<DirectionsData> {
@@ -189,7 +189,7 @@ class DirectionsDataSearch extends SearchDelegate<DirectionsData> {
                     ),
                     Text(
                       seleccion2,
-                      textAlign: TextAlign.left,
+                      textAlign: TextAlign.center,
                       style: const TextStyle(fontSize: 25),
                     ),
                     //Container()
@@ -305,8 +305,8 @@ class DirectionsDataSearch extends SearchDelegate<DirectionsData> {
     //final nuevaSugerida = query.isEmpty? loadDirectionsData() : loadDirectionsData().where((p) => p.title.startsWith(query)).toList() ;
     //final listaSugerida = (query.isEmpty) ? datos33 : animales.where((data) => data.toLowerCase().startsWith(query.toLowerCase())).toList();
     final nuevaSugerida = query.isEmpty
-        ? loadDirectionsData()
-        : loadDirectionsData()
+        ? loadDirectionsDataHimnos()
+        : loadDirectionsDataHimnos()
             .where((p) => p.title.toLowerCase().startsWith(query.toLowerCase()))
             .toList();
 

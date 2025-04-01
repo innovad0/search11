@@ -3,19 +3,19 @@
 
 import 'package:flutter/material.dart';
 //import 'package:toeflapp/pages/voz.dart';
-import 'package:search11/search/search.dart';
+import 'package:search11/search/search_himnos.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 //import 'home_page.dart';
 
 // ignore: camel_case_types, use_key_in_widget_constructors
-class instructions_Directions extends StatefulWidget {
+class instructions_DirectionsHimnos extends StatefulWidget {
   
   @override
-  _instructions_DirectionsState createState() => _instructions_DirectionsState();
+  _instructions_DirectionsHimnosState createState() => _instructions_DirectionsHimnosState();
 }
 
-class _instructions_DirectionsState extends State<instructions_Directions> {
+class _instructions_DirectionsHimnosState extends State<instructions_DirectionsHimnos> {
 
   late YoutubePlayerController _controller;
 
@@ -75,7 +75,7 @@ class _instructions_DirectionsState extends State<instructions_Directions> {
         //titlePadding: EdgeInsets.all(20),
         centerTitle: false,
         title: const Text(
-          'Biblia',
+          'HIMNOS',
           style: TextStyle(color: Colors.white, fontSize: 16.0),
         ),
         background: Container(
@@ -112,9 +112,9 @@ class _instructions_DirectionsState extends State<instructions_Directions> {
             children: <Widget>[
               IconButton(
                   //alignment: Alignment(30, 10),
-                  icon: const Icon(Icons.book),
+                  icon: const Icon(Icons.music_note_sharp),
                   iconSize: 80.0,
-                  color: Colors.red,
+                  color: Colors.lightBlue,
                   // hoverColor: Colors.redAccent,
                   // disabledColor: Colors.redAccent,
                   // focusColor: Colors.redAccent,
@@ -124,19 +124,19 @@ class _instructions_DirectionsState extends State<instructions_Directions> {
                     //ewe = '';
                     showSearch(context: context, delegate: DirectionsDataSearch());
                   }),
-              const Text('Reyna Valera 1960',
+              const Text('Himnos',
                   style: TextStyle(color: Colors.black, fontSize: 16.0)),
               const SizedBox(width: 15, height: 50),
-              const Icon(Icons.accessibility),
-              const Text('Gracias:',
-                    style: TextStyle(color: Colors.blueGrey, fontSize: 16.0)),
+              //const Icon(Icons.accessibility),
+              // const Text('Gracias:',
+              //       style: TextStyle(color: Colors.blueGrey, fontSize: 16.0)),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 //crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   const SizedBox(width: 15, height: 50),
-                  const Text('Gracias:',
-                    style: TextStyle(color: Colors.blueGrey, fontSize: 16.0)),
+                  // const Text('Gracias:',
+                  //   style: TextStyle(color: Colors.blueGrey, fontSize: 16.0)),
 
                   // YoutubePlayer(
                   //   //aspectRatio: 10/8,
